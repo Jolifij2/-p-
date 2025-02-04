@@ -1,0 +1,173 @@
+﻿#include <iostream>
+
+
+using namespace std;
+
+struct boiler {
+    string model;
+    string collor;
+    double width;
+    double height;
+    int power;
+    int speed;
+    int temperate;
+};
+
+int main() {
+    setlocale(LC_ALL, "ru");
+    boiler haier;
+    char choice;
+    cout << "введите модель стиральной машины: " << endl;
+    cin >> haier.model;
+    cout << "введите цвет стиральной машины: " << endl;
+    cin >> haier.collor;
+    cout << "введите размер стиральной машины(весота, ширина) : "<<endl;
+    cin >> haier.height >> haier.width;
+    cout << "введите мощность стиральной машины: " << endl;
+    cin >> haier.power;
+    cout << "введите скорость стиральной машины: " << endl;
+    cin >> haier.speed;
+    cout << "введите максимальный нагрев стиральной машины: " << endl;
+    cin >> haier.temperate;
+    do {
+        cout << "\nчто хотите вывести?" << endl;
+        cout << "1.модель стиральной машины\n2.цвет стиральной машины\n3.размер стиральной миашины\n4.мощность стиральной машины\n5.скорость стиральной машины\n6.максимальный нагрев\n0.выход\n";
+        cin >> choice;
+        switch (choice) {
+        case '1':cout << "модель: " << haier.model; break;
+        case'2':cout << "цвет: " << haier.collor; break;
+        case'3':cout << "размер: " << haier.height << haier.width; break;
+        case'4':cout << "мощность: " << haier.power; break;
+        case'5':cout << "скорость: " << haier.speed; break;
+        case'6':cout << "максимальный нагрев: " << haier.temperate; break;
+        case'0':cout << "=(!"; break;
+        }
+    } while (choice != '0');
+    return 0;
+}
+//задание 2
+#include <iostream>
+
+
+using namespace std;
+
+struct animal {
+    string name;
+    string klass;
+    string sound;
+};
+
+int main() {
+    setlocale(LC_ALL, "ru");
+    animal cat;
+    char choice;
+    cout << "у нас есть Кошка: " << endl;
+    cout << "введите кличку Кошки: " << endl;
+    cin >> cat.name;
+    cout << "введите класс Кошки: " << endl;
+    cin >> cat.klass;
+    cout << "как говорит Кошка?"<<endl;
+    cin >> cat.sound;
+  
+    do {
+        cout << "\nчто хотите вывести?" << endl;
+        cout << "1.Кличка\n2.Класс\n3.Голос\n0.выход\n";
+        cin >> choice;
+        switch (choice) {
+        case '1':cout << "Кличка: " << cat.name; break;
+        case'2':cout << "Класс: " << cat.klass; break;
+        case'3':cout << "Кошечка говорит: " << cat.sound; break;
+        case'0':cout << "бб"; break;
+        }
+    } while (choice != '0');
+    return 0;
+}
+//Задания 3
+﻿#include <iostream>
+
+
+using namespace std;
+
+struct boiler {
+    string model;
+    string collor;
+    int power;
+    int obiem;
+    int temperate;
+};
+
+int main() {
+    setlocale(LC_ALL, "ru");
+    boiler haier;
+    char choice;
+    cout << "введите модель боллера: " << endl;
+    cin >> haier.model;
+    cout << "введите цвет боллера: " << endl;
+    cin >> haier.collor;
+    cout << "введите мощность боллера: " << endl;
+    cin >> haier.power;
+    cout << "введите объем боллера: " << endl;
+    cin >> haier.obiem;
+    cout << "введите максимальный нагрев боллера: " << endl;
+    cin >> haier.temperate;
+    do {
+        cout << "\nчто хотите вывести?" << endl;
+        cout << "1.модель боллера\n2.цвет боллера\n3.мощность боллера\n4.объем боллера\n5.максимальный нагрев\n0.выход\n";
+        cin >> choice;
+        switch (choice) {
+        case '1':cout << "модель: " << haier.model; break;
+        case'2':cout << "цвет: " << haier.collor; break;
+        case'3':cout << "мощность: " << haier.power; break;
+        case'4':cout << "объем: " << haier.obiem; break;
+        case'5':cout << "максимальный нагрев: " << haier.temperate; break;
+        case'0':cout << "Поки"; break;
+        }
+    } while (choice != '0');
+    return 0;
+}
+//Задание 4
+#include <iostream>
+
+
+using namespace std;
+
+struct utyug {
+    string model;
+    string firma;
+    string podacha;
+    double max_t;
+    double min_t;
+    int power;
+    
+};
+
+int main() {
+    setlocale(LC_ALL, "ru");
+    utyug haier;
+    char choice;
+    cout << "введите модель утюга: " << endl;
+    cin >> haier.model;
+    cout << "введите фирму утюга: " << endl;
+    cin >> haier.firma;
+    cout << "введите подача пара пристутсвует?(да/нет): " << endl;
+    cin >> haier.podacha;
+    cout << "введите максимальную и минимальную температуру : " << endl;
+    cin >> haier.max_t >> haier.min_t;
+    cout << "введите мощность стиральной машины: " << endl;
+    cin >> haier.power;
+   
+    do {
+        cout << "\nчто хотите вывести?" << endl;
+        cout << "1.модель утюга\n2.фирма утюга\n3.максимальная и минимальная температура утюга\n4.мощность утюга\n5.подача пара\n0.выход\n";
+        cin >> choice;
+        switch (choice) {
+        case '1':cout << "модель: " << haier.model; break;
+        case'2':cout << "фирма: " << haier.firma; break;
+        case'3':cout << "максмиальная и минимальная температура: " << haier.max_t << haier.min_t; break;
+        case'4':cout << "мощность: " << haier.power; break;
+        case'5':cout << "подача пара: " << haier.podacha; break;
+        case'0':cout << "Эх..."; break;
+        }
+    } while (choice != '0');
+    return 0;
+}
