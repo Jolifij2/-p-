@@ -1,9 +1,9 @@
-﻿#include <iostream>
+    ﻿#include <iostream>
 
 
 using namespace std;
 
-struct boiler {
+struct stiralka {
     string model;
     string collor;
     double width;
